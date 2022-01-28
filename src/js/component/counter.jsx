@@ -15,12 +15,13 @@ const Counter = () => {
 
 	return (
 		<>
-			<Container className="bg-dark h-25 w-50 d-flex flex-row">
+			<Container className="bg-dark h-25 w-25 d-flex flex-row">
 				<Image
-					className="img-fluid"
+					className="img-fluid py-1 my-1 px-1 rounded rounded-3 bg-secondary"
 					src="https://www.pngrepo.com/png/132777/512/clock.png"
+					id="clock-image"
 				/>
-				<SecondsCounter seconds={seconds} />
+				<SecondsCounter className="flex-grow-1" seconds={seconds} />
 			</Container>
 		</>
 	);
